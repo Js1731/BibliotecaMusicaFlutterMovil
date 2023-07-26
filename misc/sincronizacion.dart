@@ -532,7 +532,7 @@ Future<void> sincronizar() async {
     provBarraLog.texto("Sincronizando", "Datos Sincronizados.");
     provBarraLog.cambiarEstadoSinc(true);
 
-    sincronizarArchivos(provGeneral, provBarraLog);
+    sincronizarArchivos();
   } catch (error) {
     if (error is DioException) {
       provBarraLog.texto(
