@@ -433,7 +433,7 @@ Future<void> actualizarDatosLocales() async {
   final versionLocal = await obtNumeroVersionLocal();
   await actNumeroVersionLocal(versionLocal + 1);
 
-  sincronizar(provGeneral, provLog);
+  sincronizar();
 }
 
 Future<void> sincronizarArchivos() async {
